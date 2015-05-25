@@ -6,10 +6,11 @@ function sendMail() {
       'key': 'YNFDoAWm5FEa5d7kANAZsQ',
       'message': {
         'from_email': "efrat.jell@gmail.com",
+        'name': "אפרת",
         'to': [
         {
         'email': "elikhaim@gmail.com",
-        'name': 'RECIPIENT NAME (OPTIONAL)',
+        'name': 'eli',
         'type': 'to'
         }
         ],
