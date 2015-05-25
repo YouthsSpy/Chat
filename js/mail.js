@@ -6,7 +6,7 @@ function sendMail() {
       'key': 'YNFDoAWm5FEa5d7kANAZsQ',
       'message': {
         'from_email': "efrat.jell@gmail.com",
-        'name': "אפרת",
+        'from_name': "אפרת",
         'to': [
         {
         'email': "elikhaim@gmail.com",
