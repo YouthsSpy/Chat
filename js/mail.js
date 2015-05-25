@@ -15,11 +15,11 @@ function sendMail() {
         ],
         'autotext': 'true',
         'subject': "Message From Efrat",
-        'html': document.getElementsByName("mailBodyText")[0].value
+        'html': document.getElementById("mailBodyText").value
       }
     }
   }).done(function(response) {
-      byName("body").value = "";
+      document.getElementById("mailBodyText").value = "";
       console.log(response);
   });
 }
