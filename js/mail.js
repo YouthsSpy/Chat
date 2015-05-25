@@ -15,7 +15,7 @@ function sendMail() {
         ],
         'autotext': 'true',
         'subject': "Message From Efrat",
-        'html': byName("body").value
+        'html': document.getElementsByName("mailBodyText")[0].value
       }
     }
   }).done(function(response) {
