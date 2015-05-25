@@ -19,6 +19,7 @@ function sendMail() {
       }
     }
   }).done(function(response) {
+      byName("body").value = "";
       console.log(response);
   });
 }
