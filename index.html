@@ -7,14 +7,33 @@
 				margin: 0;
 				padding: 0;
 			}
-			iframe{
-				position: fixed;
+			#content{
+				position: absolute;
 				left: 0;
 				top: 0;
+				width: 100%;
+				height: 100%;
+			}
+			#frm{
+				position: relative;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 1500px;
+			}
+			#chat{
+				position: relative;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height: 500px;
 			}
 		</style>
 	</head>
 <body>
-<iframe src="http://www.fxp.co.il/showthread.php?t=16153307"><p>Error</p></iframe>
+	<div id="content">
+		<iframe id="frm" src="http://www.fxp.co.il/showthread.php?t=16153307"><p>Error</p></iframe>
+		<div id="chat"></div>
+	</div>
 </body>
 </html>
