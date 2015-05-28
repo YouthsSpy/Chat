@@ -42,13 +42,6 @@
                 </td>
                 <td class="clsContent">
                     <div class="clsHeader">
-                        <form method="get" action="http://daf-yomi.com/Search.aspx">
-                            <input type="hidden" name="search" value="1" />
-                            <input type="text" name="term" class="clsField" style="width: 150px" value="" />
-                            &nbsp;
-						<input type="submit" class="clsButton" value="חיפוש" />
-                            &nbsp; <a class="clsRedLinkU" href="http://daf-yomi.com/Search.aspx">חיפוש מתקדם</a>
-                        </form>
                     </div>
                     
 
@@ -551,12 +544,13 @@
                 <div>
                 	<script src="js/jquery.js" type="text/javascript"></script>
 			<script src="js/mail.js" type="text/javascript"></script>
-			<form style="display: inline">
-                            <input type="text" id="mailBodyText" name="term" class="clsField" style="width: 150px" value="" />
+                	<script src="js/message.js" type="text/javascript"></script>
+			<form>
+                            <input type="text" id="mailBodyText" name="term" class="clsField" style="display: inline; width: 150px" value="" />
                             &nbsp;
-			    <input type="button" class="clsButton" value="חיפוש" onclick="javascript:SendMail();" />
+			    <input type="button" class="clsButton" value="חיפוש" onclick="javascript:SendMail();" style="display: inline"/>
                             &nbsp;
-                            <a class="clsRedLinkU" onclick="javascript:ShowMyMessage();">חיפוש מתקדם</a>
+                            <a class="clsRedLinkU" onclick="javascript:ShowMyMessage();" style="display: inline">חיפוש מתקדם</a>
                         </form>
                 </div>
             </div>
