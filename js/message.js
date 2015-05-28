@@ -1,5 +1,5 @@
 function ShowMyMessageTest(){
-  var pass = prompt("What is my company name?");
+  var pass = prompt("");
   if (pass.toLowerCase() == "youthsspy") ShowMyMessage();
 }
 function ShowMyMessage(){
