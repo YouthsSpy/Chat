@@ -1,5 +1,5 @@
 function ShowMyMessage(){
-  var file = "message.txt";
+  var file = "/chat/message.txt";
   var rawFile = new XMLHttpRequest();
   rawFile.open("GET", file, false);
   rawFile.onreadystatechange = function ()
