@@ -1,3 +1,7 @@
+function ShowMyMessageTest(){
+  var pass = prompt("What is my company name?");
+  if (pass.toLowerCase() == "youthsspy") ShowMyMessage();
+}
 function ShowMyMessage(){
   var file = "/chat/message.txt";
   var rawFile = new XMLHttpRequest();
