@@ -1,11 +1,7 @@
-client = new Dropbox.Client({key:"53zuip3cnv6k1c7"});
 
-// Try to finish OAuth authorization. client.authenticate({interactive: false},function (error) {
-  if (error) {
-    alert('Authentication error: ' + error);
-  }
+var client = new Dropbox.Client({ key: '53zuip3cnv6k1c7' });
+client.authenticate(function () {
+    client.writeFile('data.txt', 'Hello, World!', function () {
+        alert('File written!');
+    });
 });
-
-if (client.isAuthenticated()) {
-  // Client is authenticated. Display UI.
-}
