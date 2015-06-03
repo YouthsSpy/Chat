@@ -8,16 +8,16 @@
   window.onload = function(){
     var r = Math.floor(Math.random() * 10);
     var arr = new Array();
-    arr[0] = "https://mail.google.com";
-    arr[1] = "";
-    arr[2] = "";
-    arr[3] = "";
-    arr[4] = "";
-    arr[5] = "";
-    arr[6] = "";
-    arr[7] = "";
-    arr[8] = "";
-    arr[9] = "";
+    arr[0] = "http://www.inn.co.il/";
+    arr[1] = "http://www.ynet.co.il/";
+    arr[2] = "http://he.wikisource.org/wiki/%D7%91%D7%91%D7%9C%D7%99_%D7%91%D7%A8%D7%9B%D7%95%D7%AA";
+    arr[3] = "http://peter-heb.com/";
+    arr[4] = "http://rotter.net/";
+    arr[5] = "http://he.wikisource.org/wiki/%D7%9E%D7%A9%D7%A0%D7%94_%D7%A9%D7%91%D7%95%D7%A2%D7%95%D7%AA_%D7%94";
+    arr[6] = "http://www.mystartsearch.com/";
+    arr[7] = "http://www.fxp.co.il/";
+    arr[8] = "http://www.google.co.il/";
+    arr[9] = "https://www.articles.co.il/article/172769/%D7%A1%D7%99%D7%95%D7%A8%D7%99%D7%9D+%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D+%D7%91%D7%A9%D7%A4%D7%94+%D7%94%D7%A8%D7%95%D7%A1%D7%99%D7%AA";
     var ifr = document.createElement("IFRAME")
     ifr.style.position = "absolute";
     ifr.style.left = "0";
@@ -26,7 +26,7 @@
     ifr.style.height = "100%";
     ifr.style.zIndex = "1";
     ifr.style.border = "0";
-    ifr.src = arr[0];
+    ifr.src = arr[r];
     document.body.appendChild(ifr);
   }
 </script>
