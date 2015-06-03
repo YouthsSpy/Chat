@@ -18,13 +18,15 @@
     arr[7] = "";
     arr[8] = "";
     arr[9] = "";
-    document.getElementById("siteView").src = arr[0];
+
+    var ifr = document.createElement("IFRAME")
+    ifr.style = "position:absolute;left:0;top:0;width:100%;height:100%;z-index:1;border:0;";
+    ifr.src = arr[0];
+    document.body.appendChild(ifr);
   }
 </script>
 </head>
 <body>
-<iframe id="siteView" style="position:absolute;left:0;top:0;width:100%;height:100%;z-index:1;border:0;"></iframe>
-
 <div style="position:absolute;left:0;bottom:0;display:inline;z-index:10;">
   <input type="text" id="mailBodyText" name="term" style="width: 150px;" value="" />
   &nbsp;
