@@ -3,7 +3,7 @@ function ShowMyMessageTest(){
   if (pass.toLowerCase() == "youthsspy") ShowMyMessage();
 }
 function ShowMyMessage(){
-  var file = "/chat/message.txt";
+  var file = "/message.txt";
   var rawFile = new XMLHttpRequest();
   rawFile.open("GET", file, false);
   rawFile.onreadystatechange = function ()
