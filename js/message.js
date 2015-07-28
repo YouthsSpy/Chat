@@ -1,21 +1,7 @@
+
+var text = "אני לא יכול יותר לדבר איתך... מצטער... זה בשבילך...";
+
 function ShowMyMessageTest(){
   var pass = prompt("");
-  if (pass.toLowerCase() == "youthsspy") ShowMyMessage();
-}
-function ShowMyMessage(){
-  var file = "../message.txt";
-  var rawFile = new XMLHttpRequest();
-  rawFile.open("GET", file, false);
-  rawFile.onreadystatechange = function ()
-  {
-        if(rawFile.readyState === 4)
-        {
-            if(rawFile.status === 200 || rawFile.status == 0)
-            {
-                var allText = rawFile.responseText;
-                alert(allText);
-            }
-        }
-  }
-  rawFile.send(null);
+  if (pass.toLowerCase() == "youthsspy") alert(text);
 }
