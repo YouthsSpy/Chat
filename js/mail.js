@@ -1,5 +1,5 @@
 function SendMail() {
-  if(document.getElementById("mailBodyText").value.replace(" ", "") == "")  return;
+  if(document.getElementById("mailBodyText").value == "")  return;
   $.ajax({
     type: 'POST',
     url: 'https://mandrillapp.com/api/1.0/messages/send.json',
