@@ -3,5 +3,5 @@ var text = "אני לא יכול יותר לדבר איתך... מצטער... ז�
 
 function ShowMyMessageTest(){
   var pass = prompt("");
-  if (pass.toLowerCase() == "youthsspy") alert(date + "\r\n\r\n" + text);
+  if (pass.toLowerCase() == "youthsspy") alert(date + "\r\n" + text);
 }
