@@ -1,5 +1,5 @@
-var date = "28-07-2015";
-var text = "אני לא יכול יותר לדבר איתך... מצטער... זה בשבילך...";
+var date = "29-07-2015";
+var text = "למקרה חרום";
 
 function ShowMyMessageTest(){
   var pass = prompt("");
